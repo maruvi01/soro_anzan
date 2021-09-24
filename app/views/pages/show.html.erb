@@ -1,0 +1,12 @@
+<h1>Pages#show</h1>
+<h2>anzan</h2>
+<p>Find me in app/views/pages/show.html.erb</p>
+
+<% @calc.last.each do |e| %>
+  <p><%= e %></p>
+<% end %>
+<p><%= '-' * 24 %></p>
+<%= @calc.first %>
+
+<h3><%= link_to 'retry', pages_show_path %></h3>
+
