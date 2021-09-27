@@ -1,12 +1,11 @@
-<h1>Pages#show</h1>
-<h2>anzan</h2>
-<p>Find me in app/views/pages/show.html.erb</p>
+<h2>sum</h2>
 
-<% @calc.last.each do |e| %>
-  <p><%= e %></p>
-<% end %>
-<p><%= '-' * 24 %></p>
-<%= @calc.first %>
+<table>
+  <% @calc.last.each do |e| %>
+    <tr><td><%= e %></td></tr>
+  <% end %>
+  <tr><td class="ans"><%= @calc.first %></td></tr>
+</table>
 
 <h3><%= link_to 'retry', pages_show_path %></h3>
 
