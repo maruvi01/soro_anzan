@@ -1,10 +1,10 @@
 <h2>sum</h2>
 
 <table>
-  <% @calc.last.each do |e| %>
+  <% @ar_q.each do |e| %>
     <tr><td><%= e %></td></tr>
   <% end %>
-  <tr><td class="ans"><%= @calc.first %></td></tr>
+  <tr><td class="ans"><%= @ar_q.sum %></td></tr>
 </table>
 
 <h3><%= link_to 'retry', pages_show_path, 'data-turbolinks': false %></h3>
